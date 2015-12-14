@@ -1,0 +1,7 @@
+<div class="col-xs-3">
+  <h3>{{model.name}}</h3>
+  {{#each model.items  as |item|}}
+    <li>{{item.name}}</li>
+  {{/each}}
+  {{outlet}}
+</div>

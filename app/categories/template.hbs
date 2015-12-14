@@ -1,8 +1,9 @@
+<div class= "col-xs-3">
 <h2 id = "title">Categories</h2>
-<ul>
-{{#each model as |category| }}
-  <li>{{category.name}}</li>
-{{/each}}
-</ul>
-
+  <ul>
+  {{#each model as |category| }}
+    <li>{{link-to category.name 'categories.category' category}}</li>
+  {{/each}}
+  </ul>
+</div>
 {{outlet}}

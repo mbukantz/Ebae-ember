@@ -1,0 +1,9 @@
+<div class= "col-xs-3">
+<h2 id = "title">Items</h2>
+  <ul>
+  {{#each model as |item| }}
+    <li>{{item.name}}</li>
+  {{/each}}
+  </ul>
+</div>
+{{outlet}}
